@@ -1,7 +1,7 @@
 export default function ProjectProgress({ tasks , isDarkMode}) {
   const totalTasks = Object.values(tasks).reduce((acc, curr) => acc + curr.length, 0);
   const completedTasks = tasks.done.length;
-  const inProgressTasks = tasks.inProgress.length;
+  const inProgressTasks = tasks.inprogress.length;
   const todoTasks = tasks.todo.length;
 
   const completionPercentage = totalTasks ? Math.round((completedTasks / totalTasks) * 100) : 0;

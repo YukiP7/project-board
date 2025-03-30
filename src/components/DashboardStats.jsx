@@ -1,7 +1,7 @@
 export default function DashboardStats({ tasks }) {
   const totalTasks = Object.values(tasks).reduce((acc, curr) => acc + curr.length, 0);
   const completedTasks = tasks.done.length;
-  const inProgressTasks = tasks.inProgress.length;
+  const inProgressTasks = tasks.inprogress.length;
   const todoTasks = tasks.todo.length;
 
   return (
